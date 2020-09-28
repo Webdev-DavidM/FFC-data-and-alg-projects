@@ -193,7 +193,6 @@ function checkCashRegister(price, cash, cid) {
   let totalInRegister = convertedCash.reduce((acc, curr) => {
     return acc + curr[1];
   }, 0);
-  console.log(totalInRegister);
 
   if (originalChangeDue === totalInRegister) {
     objectToReturn.status = 'CLOSED';
